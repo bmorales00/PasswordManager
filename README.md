@@ -1,4 +1,4 @@
-# PasswordManager
+PasswordManager
 
 # About
 - A Simple Password Manager using Koltin and storing the password information in a realtime database using Firebase 
