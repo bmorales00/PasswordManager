@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MenuActivity">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/cardView2">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" app:srcCompat="@drawable/ic_baseline_keycode"
+                    android:id="@+id/ivKey"/>
+            <TextView
+                    android:text="Passwords"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/tvPasswordText" android:gravity="center"
+                    android:foregroundGravity="center" android:textColor="#FF5722" android:textAllCaps="true"
+                    android:textSize="12sp" android:textStyle="bold" android:padding="2dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/rvSaveCard"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="50dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
